@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello #1</title>
+</head>
+<body>
+    <h1>Aplicación de las cuatro operaciones básicas</h1>
+    <div>
+        <form action="#" method="POST">
+            <p>Número 1</p> <input name="num1" type="number" value="{{n1}}">
+            <p>Número 2</p> <input name="num2" type="number" value="{{n2}}">
+            <button id="btncalcular">Calcular</button>
+        </form>
+        <p>Resultados:<br>
+            {% if n1!='': %}
+           <p>La suma es: </p> {{n1}}+{{n2}} = {{suma}}<br>
+           <p>La resta es: </p> {{n1}}-{{n2}} = {{resta}}<br>
+           <p>La división es: </p> {{n1}}/{{n2}} = {{division}}<br>
+           <p>La multiplicación es: </p> {{n1}}*{{n2}} = {{multiplicacion}}<br> 
+           {% endif %}
+        </p>
+    </div>
+</body>
+</html>
